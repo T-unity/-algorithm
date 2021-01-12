@@ -1,11 +1,11 @@
-# 単純な配列
+puts '単純な配列'
 a=[1,2,3]
 puts a
-puts '-----------'
-# 複数のデータ型を持つ配列
+
+puts '複数のデータ型を持つ配列'
 a=[1,'apple',2,'orrange',3,'banana']
 puts a
-puts '-----------'
+
 # データの数が一致しない配列
 c,d=[10]
 puts c
@@ -89,3 +89,78 @@ even_numbers=numbers.find {|n| n.even?}
 puts even_numbers
 # findは戻り値が真になった「最初の」要素を返す
 
+puts 'inject_method'
+numbers=[1,2,3,4]
+sum=0
+numbers.each {|n| sum+=n}
+puts sum
+
+puts 'refactoring'
+numbers=[1,2,3,4]
+sum=numbers.inject(0){|result,n| result+n}
+puts sum
+
+puts '範囲オブジェクト'
+range=1..5
+puts range.include?(0)
+puts range.include?(1)
+puts range.include?(5)
+puts range.include?(6)
+
+range=1...5
+puts range.include?(0)
+puts range.include?(1)
+puts range.include?(2)
+puts range.include?(4)
+puts range.include?(5)
+
+puts '配列、文字列の一部を抜き出す'
+a=1,2,3,4,5
+puts a[1..3]
+puts a[1...3]
+
+a='abcdef'
+puts a[1..3]
+
+puts 'n以上m以下、未満の判定をする'
+def liquid?(temperature)
+  0 <= temperature && temperature < 100
+end
+puts liquid?(-1)
+puts liquid?(0)
+puts liquid?(99)
+puts liquid?(100)
+
+puts 'case文を使う'
+def change(age)
+  case age
+  when 0..5
+    0
+  when 6..12
+    300
+  when 13..18
+    600
+  else
+    1000
+  end
+end
+puts change(3)
+puts change(9)
+puts change(15)
+puts change(20)
+
+puts '値が連続する配列を作成'
+puts (1..5).to_a
+puts (1...5).to_a
+puts ('a'..'e').to_a
+
+puts '繰り返し処理'
+numbers = (1..4).to_a
+sum = 0
+numbers.each {|n| sum += n}
+puts sum
+
+puts 'refactoring'
+sum = 0
+(1..4).each {|n| sum += n}
+puts sum

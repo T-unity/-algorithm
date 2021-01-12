@@ -12,12 +12,3 @@ def f_b(n)
     n.to_s
   end
 end
-
-puts f_b(1)
-puts f_b(2)
-puts f_b(3)
-puts f_b(4)
-puts f_b(5)
-puts f_b(6)
-puts f_b(15)
-puts f_b(30)
