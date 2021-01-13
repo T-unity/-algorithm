@@ -164,3 +164,66 @@ puts 'refactoring'
 sum = 0
 (1..4).each {|n| sum += n}
 puts sum
+
+puts 'もっと配列'
+a = [1,2,3,4,5]
+puts a[1,3]
+puts 'values'
+puts a.values_at(0,2,4)
+
+puts '配列を書き換える'
+a = [1,2,3,4,5]
+puts a
+a[1,3] = 100
+puts a
+
+puts 'push method'
+a = []
+a.push(1)
+puts a
+puts 'add integer'
+a.push(2,3)
+puts a
+
+puts 'delete method'
+a = [1,2,3,1,2,3]
+puts a
+puts 'delete integer'
+a.delete(2)
+puts a
+
+puts '配列の連結'
+a = [1]
+b = [2,3]
+puts a
+puts 'concat'
+a.concat(b)
+puts a
+puts 'b does not change'
+puts b
+
+puts 'create new array'
+a = [1]
+b = [2,3]
+puts a + b
+puts 'this is not destructive method'
+puts a
+
+puts 'union(和集合)'
+a = [1,2,3]
+b = [3,4,5]
+puts a | b
+
+puts 'Difference set(差集合)'
+puts '左の配列から右の配列に含まれる要素を取り除く'
+a = [1,2,3]
+b = [2,3,4]
+puts a - b
+a = [1,2,3]
+b = [3,4,5]
+puts a - b
+
+puts 'Intersection'
+a = [1,2,3]
+b = [3,4,5]
+puts a & b
