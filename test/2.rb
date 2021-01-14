@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require './lib/2_convert'
+require './lib/2_rgb'
 
 class RgbTest < Minitest::Test
 
