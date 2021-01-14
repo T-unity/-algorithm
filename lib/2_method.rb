@@ -227,3 +227,24 @@ puts 'Intersection'
 a = [1,2,3]
 b = [3,4,5]
 puts a & b
+
+puts '繰り返し処理'
+puts 'timesメソッド'
+sum = 0
+5.times { |n| sum += n}
+puts sum
+
+puts 'uptoメソッド'
+a = []
+10.upto(14) { |n| a << n }
+puts a
+
+puts 'downto method'
+a = []
+14.downto(10) { |n| a << n }
+puts a
+
+puts 'step method'
+a = []
+1.step(10,2) { |n| a << n }
+puts a
