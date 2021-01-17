@@ -170,3 +170,4 @@ class Gamer < User
 end
 
 puts Gamer.superclass
+
