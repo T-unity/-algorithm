@@ -33,3 +33,15 @@ lines = []
 while line = gets
     lines << line.chomp.split(' ').map(&:to_i)
 end
+
+
+timesメソッド
+# 繰り返し回数
+n = 5
+# 配列の設定
+sample = []
+
+# 繰り返し回数分、配列に格納
+n.times do
+  sample.push(gets.chomp.split(" ").map &:to_i)
+end
