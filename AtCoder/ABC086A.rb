@@ -10,6 +10,7 @@ puts 'a,bは整数'
 # a * b = odd? or even?
 
 a,b = gets.chomp.split(" ").map(&:to_i)
+# ↑空白区切りの文字列を取得して数値化
 x = a * b
 
 if x % 2 == 0
