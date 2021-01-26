@@ -1,4 +1,29 @@
 # -------------------
+line = readlines.map(&:chomp)
+n = line[0].to_i
+m = line[1].to_i
+puts n / m
+
+
+n = gets.to_i
+m = gets.to_i
+puts n / m
+
+# -------------------
+n = gets.to_i
+if n == 5
+  puts 'A'
+elsif n == 4
+  puts 'B'
+elsif n == 3
+  puts 'C'
+elsif n == 2
+  puts 'D'
+else
+  puts 'E'
+end
+
+# -------------------
 s = gets.split(" ")
 n = s[1].to_i
 puts s[0].slice(n - 1)
