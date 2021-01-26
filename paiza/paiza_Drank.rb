@@ -1,4 +1,16 @@
 # -------------------
+n = gets.to_i
+if n.odd?
+  puts 'ON'
+elsif n.even?
+  puts 'OFF'
+end
+
+# -------------------
+m,n = gets.split(" ").map &:to_i
+puts m - n
+
+# -------------------
 line = readlines.map(&:chomp)
 n = line[0].to_i
 m = line[1].to_i
