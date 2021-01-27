@@ -1,4 +1,75 @@
 # -------------------
+n = readlines.map(&:to_i)
+if n[0] == n[1] && n[1] == n[2]
+  puts 'YES'
+else
+  puts 'NO'
+end
+
+# refactoring
+a = gets.to_i
+b = gets.to_i
+c = gets.to_i
+if a == b && b == c
+  puts 'YES'
+else
+  puts 'NO'
+end
+
+# -------------------
+n = gets.to_i
+m = gets.to_i
+x = (n / 10) * m
+puts x
+
+# -------------------
+s = gets
+t = gets
+
+if s == t
+  puts 'Yes'
+else
+  puts 'No'
+end
+
+# -------------------
+s = gets.chomp
+n = gets.to_i
+puts s[0...n]
+
+# -------------------
+n = gets.to_i
+range = 1..n
+puts range.sum
+
+# -------------------
+n = gets.to_i
+range = 1..n
+
+puts range.sum
+# refactoring
+
+n = gets.to_i
+num = 0
+for i in 1..n do
+  num += i
+end
+puts num
+
+# -------------------
+line = readlines.map(&:chomp)
+n = line[0].to_i
+puts line[1] * n
+
+# -------------------
+line = readlines.map(&:chomp)
+puts "#{line[0]}@#{line[1]}"
+
+# -------------------
+n,m = gets.split(" ").map &:to_i
+puts "#{n*6000 + m*4000}"
+
+# -------------------
 line = readlines.map(&:chomp)
 puts "#{line[1]}#{line[0]}#{line[1]}"
 
