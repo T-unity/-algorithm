@@ -1,4 +1,20 @@
 # -------------------
+line = readlines.map(&:chomp)
+puts "#{line[1]}#{line[0]}#{line[1]}"
+
+# -------------------
+n = gets.to_i
+puts 100 - n
+
+# -------------------
+s_1,s_2 = gets.split(" ").map &:to_s
+puts "#{s_2} #{s_1}"
+
+# -------------------
+a,b = gets.split(" ").map &:to_i
+puts b - a
+
+# -------------------
 n = gets.to_i
 if n.odd?
   puts 'ON'
