@@ -1,4 +1,12 @@
 # -------------------
+n = gets.split(' ').map(&:to_i)
+puts n[0] - n[1]
+
+# -------------------
+n = gets.split(' ').map(&:to_i)
+puts n[0] * n[1]
+
+# -------------------
 n = readlines.map(&:to_i)
 if n[0] == n[1] && n[1] == n[2]
   puts 'YES'
