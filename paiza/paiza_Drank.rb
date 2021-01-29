@@ -1,4 +1,23 @@
 # -------------------
+s = gets
+puts s.gsub(/noaki/, "")
+
+# -------------------
+n = gets.split(' ').map(&:to_i)
+i = n[0] + n[1]
+if i.even?
+  puts 'NO'
+elsif i.odd?
+  puts 'YES'
+end
+
+# -------------------
+n = gets.split(' ').map(&:to_i)
+puts "#{n[0]}/#{n[1]}/#{n[2]}"
+
+puts n[0] + '/' + n[1] + '/' + n[2]
+
+# -------------------
 n = gets.split(' ').map(&:to_i)
 puts n[0] - n[1]
 
