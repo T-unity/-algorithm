@@ -1,4 +1,31 @@
 # -------------------
+n = gets.split(' ').map(&:to_i)
+n1 = n[0]
+n2 = n[1]
+
+if n1 >= 5
+  i1 = n1 - n1 + 5
+else
+  i1 = n1
+end
+
+if n2 >= 5
+  i2 = n2 - n2 + 5
+else
+  i2 = n2
+end
+
+puts i1 + i2
+
+
+# -------------------
+n = gets.split(' ').map(&:to_i)
+i = gets.to_i
+n1 = n[0]
+n2 = n[1]
+puts "#{n1-i} #{n2-i}"
+
+# -------------------
 s = gets
 puts s.gsub(/noaki/, "")
 
