@@ -1,4 +1,19 @@
 # -------------------
+n = readlines.map(&:to_i)
+puts n[1..]
+
+# -------------------
+n = gets.to_i
+i = 1
+s = 0
+n.times {
+    a = gets.to_i
+    s += (a - i).abs
+    i = a
+}
+puts s
+
+# -------------------
 s = gets.chomp
 l = s.length
 
