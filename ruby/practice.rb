@@ -1,7 +1,22 @@
+# 改行区切りで整数がn個入力されるので、n個の整数のうち、5以上のものを全て足し合わせた値を出力
+loop = gets.chomp.to_i
+ans = 0
+
+(1..loop).each { |i|
+    num = gets.chomp.to_i
+
+    if num >= 5 then
+        ans = ans + num
+    end
+}
+
+puts ans
+
+
 # 指定した配列（リスト）を定義し、それらの要素のうち5以上の数を全て足して結果を出力
 n = [4, 0, 5, -1, 3, 10, 6, -8]
 a = 0
- n.each do |sum|
+n.each do |sum|
   if sum >= 5
     a += sum
   end

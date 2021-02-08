@@ -1,4 +1,16 @@
+# -------------------
+n = gets.to_i
+m = gets.to_i
 
+puts n*n - m
+
+# -------------------
+n = gets.to_i
+if n >= 1000
+  puts n + 3
+else
+  puts n
+end
 
 # -------------------
 n = gets.to_i
