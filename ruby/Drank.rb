@@ -1,4 +1,11 @@
 # -------------------
+n = gets
+puts n.length - 1
+
+n = gets
+puts n.size - 1
+
+# -------------------
 s = gets
 puts s[0..2]
 
